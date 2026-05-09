@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/shared.css">
+  <link rel="stylesheet" href="../../assets/css/v5.css">
+  <script src="../../assets/js/site-data.js" defer></script>
+  <script src="../../assets/js/site.js" defer></script>
+  <title></title>
+</head>
+<body data-title-key="galleryTitle" data-page="gallery" class="v5">
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <span class="brand-eyebrow">MCU PROJECT 61</span>
+        <h1 class="brand-title" data-i18n="titleIndex">智能垃圾分类机器人</h1>
+      </div>
+      <nav class="site-nav">
+        <ul>
+          <li><a data-nav="home" href="../../v5/" data-i18n="home">首页</a></li>
+          <li><a data-nav="cases" href="../../v5/cases/" data-i18n="navCases">应用场景</a></li>
+          <li><a data-nav="about" href="../../v5/about/" data-i18n="navAbout">关于我们</a></li>
+          <li><a data-nav="gallery" href="../../v5/gallery/" data-i18n="navGallery">图像展示</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-button" type="button" data-toggle-lang>中文/EN</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="site-shell">
+      <section class="page-banner">
+        <h2 data-i18n="galleryTitle">图像展示</h2>
+        <p data-i18n="galleryHint">支持查看图片与演示视频，展示设备外观与运行效果。</p>
+      </section>
+
+      <div class="gallery-grid">
+        <article class="media-card">
+          <div class="media-preview"><img src="../../assets/media/img1.jpg" alt="device image"></div>
+          <h3 data-i18n="picText">图片</h3>
+          <p data-i18n="imageCaption">设备外观展示</p>
+          <button type="button" data-open-media="image" data-i18n="picText">图片</button>
+        </article>
+        <article class="media-card">
+          <div class="media-preview"><video src="../../assets/media/video1.mp4" muted playsinline preload="metadata"></video></div>
+          <h3 data-i18n="videoText">视频</h3>
+          <p data-i18n="videoCaption">设备演示视频</p>
+          <button type="button" data-open-media="video" data-i18n="videoText">视频</button>
+        </article>
+      </div>
+
+      <div class="modal" data-modal>
+        <div class="modal-dialog">
+          <button class="modal-close" type="button" data-modal-close aria-label="Close">×</button>
+          <img src="../../assets/media/img1.jpg" alt="device image" hidden>
+          <video src="../../assets/media/video1.mp4" controls playsinline hidden></video>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 微控项目61组</p>
+      <a href="../../index.html" class="button secondary" data-i18n="allVersions">All Versions</a>
+    </div>
+  </footer>
+</body>
+</html>
