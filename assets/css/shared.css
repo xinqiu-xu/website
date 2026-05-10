@@ -470,6 +470,11 @@ main {
   border-radius: 18px;
 }
 
+.modal-dialog img[hidden],
+.modal-dialog video[hidden] {
+  display: none !important;
+}
+
 .modal-close {
   position: absolute;
   top: 12px;

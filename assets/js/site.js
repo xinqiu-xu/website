@@ -65,13 +65,16 @@
 
     function open(type) {
       modal.classList.add("is-open");
+      modal.dataset.mediaType = type;
       if (type === "image") {
         image.hidden = false;
         video.hidden = true;
         video.pause();
+        video.currentTime = 0;
       } else {
         image.hidden = true;
         video.hidden = false;
+        video.load();
         video.currentTime = 0;
         video.play();
       }
@@ -80,6 +83,9 @@
 
     function close() {
       modal.classList.remove("is-open");
+      delete modal.dataset.mediaType;
+      image.hidden = true;
+      video.hidden = true;
       video.pause();
       video.currentTime = 0;
       document.body.classList.remove("modal-open");
