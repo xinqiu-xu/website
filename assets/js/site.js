@@ -85,8 +85,8 @@
       document.body.classList.remove("modal-open");
     }
 
-    document.querySelectorAll("[data-open-media]").forEach((button) => {
-      button.addEventListener("click", () => open(button.dataset.openMedia));
+    document.querySelectorAll("[data-open-media]").forEach((trigger) => {
+      trigger.addEventListener("click", () => open(trigger.dataset.openMedia));
     });
 
     closeButton.addEventListener("click", close);
