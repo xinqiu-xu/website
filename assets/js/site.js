@@ -72,6 +72,8 @@
       } else {
         image.hidden = true;
         video.hidden = false;
+        video.currentTime = 0;
+        video.play();
       }
       document.body.classList.add("modal-open");
     }
@@ -79,6 +81,7 @@
     function close() {
       modal.classList.remove("is-open");
       video.pause();
+      video.currentTime = 0;
       document.body.classList.remove("modal-open");
     }
 
