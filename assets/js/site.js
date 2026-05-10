@@ -67,10 +67,10 @@
       modal.classList.add("is-open");
       modal.dataset.mediaType = type;
       if (type === "image") {
-        image.hidden = false;
-        video.hidden = true;
         video.pause();
         video.currentTime = 0;
+        video.hidden = true;
+        image.hidden = false;
       } else {
         image.hidden = true;
         video.hidden = false;

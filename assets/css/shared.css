@@ -455,19 +455,29 @@ main {
 
 .modal-dialog {
   position: relative;
-  width: min(960px, calc(100vw - 40px));
+  width: min(1100px, calc(100vw - 40px));
   padding: 20px;
   border-radius: 26px;
   background: rgba(15, 23, 42, 0.94);
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.modal-stage {
+  height: min(78vh, calc(100vh - 120px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-dialog img,
 .modal-dialog video {
   width: 100%;
-  max-height: 78vh;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   border-radius: 18px;
+  background: #020617;
 }
 
 .modal-dialog img[hidden],
